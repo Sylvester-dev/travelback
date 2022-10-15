@@ -2,9 +2,9 @@ import React from 'react';
 import item1 from '../../images/img1.jpg';
 import item2 from '../../images/img2.jpg';
 import item3 from '../../images/img3.jpg';
-import style from './Features.module.scss';
+import style from './Feature.module.scss';
 
-function Features() {
+function Feature() {
     return (
         <div className={style.feature_sec}>
             <div className={style.feature_sec_main}>
@@ -36,4 +36,4 @@ function Features() {
     );
 }
 
-export default Features;
+export default Feature;
