@@ -43,7 +43,7 @@ function Navbar() {
                 
                     <div className={style.nav_brand}>
                         <h2>
-                            <MdLocalHotel size={30} style={{ marginRight: '5px' }} /> Rooms
+                            <MdLocalHotel size={30} style={{ marginRight: '5px' }} /> TravelBack
                         </h2>
                     </div>
                 

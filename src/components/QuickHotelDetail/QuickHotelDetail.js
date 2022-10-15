@@ -1,20 +1,20 @@
 import React from 'react';
-import Hotel from '../Hotel/Hotel';
-import style from './HotelDetail.module.scss';
+import QuickHotel from '../QuickHotel/QuickHotel';
+import style from './QuickHotelDetail.module.scss';
 
-function HotelDetail({ homesDetails }) {
+function QuickHotelDetail({ homesDetails }) {
     return (
         <div className={style.LovelyHome_detail}>
-            <h2>Long Vacations</h2>
+            <h2>Liquid Holidays</h2>
             
             <div className={style.LovelyHome_detail_main}>
                 {homesDetails?.map((details, i) => (
                   
-                  <Hotel hmDetails={details} />
+                  <QuickHotel hmDetails={details} />
                 ))}
             </div>
         </div>
     );
 }
 
-export default HotelDetail;
+export default QuickHotelDetail;

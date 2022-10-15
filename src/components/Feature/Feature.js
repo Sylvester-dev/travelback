@@ -11,7 +11,7 @@ function Feature() {
                 <div className={style.feature_item}>
                     <img src={item1} className={style.feature_item_img} />
                     <div className={style.feature_item_txt}>
-                        <h1>Berlin</h1>
+                        <h1>Lucknow</h1>
                         <h2>3 properties</h2>
                     </div>
                 </div>
@@ -19,7 +19,7 @@ function Feature() {
                 <div className={style.feature_item}>
                     <img src={item2} className={style.feature_item_img} />
                     <div className={style.feature_item_txt}>
-                        <h1>Tokyo</h1>
+                        <h1>Bangalore</h1>
                         <h2>4 properties</h2>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ function Feature() {
                 <div className={style.feature_item}>
                     <img src={item3} className={style.feature_item_img} />
                     <div className={style.feature_item_txt}>
-                        <h1>Dubai</h1>
+                        <h1>Delhi</h1>
                         <h2>2 properties</h2>
                     </div>
                 </div>

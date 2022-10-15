@@ -1,23 +1,23 @@
-import {Link} from 'react-router-dom';
-import React from 'react';
-import style from './Hotel.module.scss';
 
-function Hotel({ hmDetails }) {
+import React from 'react';
+import style from './QuickHotel.module.scss';
+
+function QuickHotel({ hmDetails }) {
     return (
         <div className={style.lovely_home}>
             <div>
                 <img
                     className={style.lovely_home_img}
                     src={hmDetails.img}
-                    alt="Lovely Hotel"
+                    alt="XYZ Hotel"
                     height={200}
                     width={250}
                 />
             </div>
             
-            <Link to={`/hotels/${hmDetails.id}`}>
+            <a href={`/hotels/${hmDetails.id}`}>
                 <h3>{hmDetails.title}</h3>
-            </Link>
+            </a>
             <p style={{textTransform: 'capitalize'}}>{hmDetails.location}</p>
             <p className={style.lovely_home_price}> Starting from {hmDetails.price}</p>
 
@@ -29,4 +29,4 @@ function Hotel({ hmDetails }) {
     );
 }
 
-export default Hotel;
+export default QuickHotel;

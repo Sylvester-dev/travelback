@@ -55,13 +55,13 @@ function Header({type}) {
                 {type !== "hList" && (
                     <>
                         
-                    <h1 >Lorem ipsum dolor sit amet consectetur</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente 
+                    <h1 >Travelling made fun with cashbacks💸 and superfluid🌊</h1>
+                    <p className={style.username}>
+                    ✈TravelFluidly🌫
                     </p>
 
                    
-                        <div className={style.username}>Welcome <b> to travelback</b></div>
+                        
                    
             
                     {/* {user ? (
@@ -80,7 +80,7 @@ function Header({type}) {
                                 <MdLocalHotel className={style.header_search_icon_first} />
                                 <input
                                     type="text"
-                                    placeholder="Berlin, Tokyo, Dubai"
+                                    placeholder="Headout , Banglore, India"
                                     className={style.searc_inp}
                                     value={city?.toLowerCase()}
                                     onChange={(e) => setCity(e.target.value)}
