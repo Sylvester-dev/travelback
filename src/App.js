@@ -53,7 +53,7 @@ const QuickHomesDetails = [
         img: item6,
         title: 'The Front Bay',
         location: 'Barcelona',
-        price: '$135',
+        price: '1 wei/sec',
         rating: '9.5',
     },
     {
@@ -61,7 +61,7 @@ const QuickHomesDetails = [
         img: item7,
         title: 'The Nine',
         location: 'Lisbon',
-        price: '$105',
+        price: '2 wei/sec',
         rating: '8.7',
     },
     {
@@ -69,7 +69,7 @@ const QuickHomesDetails = [
         img: item8,
         title: 'Sun and Sand Hotel',
         location: 'London',
-        price: '$165',
+        price: '4 wei/sec',
         rating: '9.5',
     },
     {
@@ -77,7 +77,7 @@ const QuickHomesDetails = [
         img: item9,
         title: 'The True Eyes',
         location: 'Chevel',
-        price: '$135',
+        price: '3 wei/sec',
         rating: '9.6',
     },
 ];

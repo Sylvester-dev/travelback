@@ -1,12 +1,62 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaGripLines, FaHome, FaNewspaper, FaTimes } from 'react-icons/fa';
 import { MdLocalHotel, MdLocalTaxi, MdMapsHomeWork } from 'react-icons/md';
 import style from './Navbar.module.scss';
+import { ethers } from "ethers";
+
 
 function Navbar() {
   
-    const [toggler, setToggler] = useState(false)
+    const [toggler, setToggler] = useState(false);
+    const [currentAccount, setCurrentAccount] = useState("");
+
+const connectWallet = async () => {
+  try {
+    const { ethereum } = window;
+
+    if (!ethereum) {
+      alert("Get MetaMask!");
+      return;
+    }
+    const accounts = await ethereum.request({
+      method: "eth_requestAccounts"
+    });
+    console.log("Connected", accounts[0]);
+    setCurrentAccount(accounts[0]);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const checkIfWalletIsConnected = async () => {
+    const { ethereum } = window;
+
+    if (!ethereum) {
+      console.log("Make sure you have metamask!");
+      return;
+    } else {
+      console.log("We have the ethereum object", ethereum);
+    }
+
+    const accounts = await ethereum.request({ method: "eth_accounts" });
+    const chain = await window.ethereum.request({ method: "eth_chainId" });
+    let chainId = chain;
+    console.log("chain ID:", chain);
+    console.log("global Chain Id:", chainId);
+    if (accounts.length !== 0) {
+      const account = accounts[0];
+      console.log("Found an authorized account:", account);
+      setCurrentAccount(account);
+    } else {
+      console.log("No authorized account found");
+    }
+  };
+
+  useEffect(() => {
+    checkIfWalletIsConnected();
+  }, []);
+
 
     const menus = [
         {
@@ -61,11 +111,18 @@ function Navbar() {
                 </div>
 
                 <div className={style.registration}>
-                    
-                        <button className={style.reg_btn} type="button">
-                            Connect Wallet
-                        </button>
                   
+                        {currentAccount === "" ? (
+                                    <button id="connectWallet" className={style.reg_btn} onClick={connectWallet}>
+                                    Connect Wallet
+                                    </button>
+                                ) : (
+                                    <button className={style.reg_btn}>
+                                    {`${currentAccount.substring(0, 4)}...${currentAccount.substring(
+                                        38
+                                    )}`}
+                                    </button>
+                        )}
                     
                 </div>
                 {/* <div className={style.registration}>
