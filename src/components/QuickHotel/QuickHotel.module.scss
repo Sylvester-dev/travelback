@@ -1,3 +1,27 @@
+.reg_btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 2px;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(89, 79, 179);
+  transition: all 0.3s ease;
+}
+
+.reg_btn:hover {
+  background-color: #92b4ec;
+}
+
+.reg_form{
+  margin: 10px;
+  padding: 10px;
+}
+
 .quickly_home {
   .quickly_home_img {
     object-fit: cover;

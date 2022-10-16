@@ -93,7 +93,8 @@ const checkIfWalletIsConnected = async () => {
                 
                     <div className={style.nav_brand}>
                         <h2>
-                            <MdLocalHotel size={30} style={{ marginRight: '5px' }} /> TravelBack
+                        <img src="https://i.ibb.co/SBFcj5D/travel-back-logo.png" alt="logo" className="photo" style={{width: '70px', height: '50px'}} />
+                        <div id="logo"><span style={{color:'#53c6b7'}}>travel</span> <span>Back</span></div>
                         </h2>
                     </div>
                 

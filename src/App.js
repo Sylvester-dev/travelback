@@ -20,7 +20,7 @@ const HomesDetails = [
         title: 'SeaScape',
         location: 'Lucknow',
         price: '$135',
-        rating: '9.5',
+        rating: '8.0',
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ const HomesDetails = [
         title: 'Bangalore',
         location: 'Lisbon',
         price: '$105',
-        rating: '8.7',
+        rating: '9.7',
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ const HomesDetails = [
         title: 'The Goring',
         location: 'Delhi',
         price: '$165',
-        rating: '9.5',
+        rating: '9.2',
     },
     {
         id: 4,
@@ -44,7 +44,7 @@ const HomesDetails = [
         title: 'The Tower of Dubai',
         location: 'Dubai',
         price: '$135',
-        rating: '9.6',
+        rating: '8.5',
     },
 ];
 const QuickHomesDetails = [

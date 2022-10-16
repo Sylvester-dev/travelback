@@ -11,7 +11,6 @@ import {
     Card
   } from "react-bootstrap";
 
-
 //where the Superfluid logic takes place
 async function createNewFlow(recipient, flowRate) {
 
@@ -168,7 +167,7 @@ function QuickHotel({ hmDetails }) {
 
   function CreateButton({ isLoading, children, ...props }) {
     return (
-      <Button variant="success" className="button" {...props}>
+      <Button variant="success" className={style.reg_btn} {...props}>
         {isButtonLoading ? <Spinner animation="border" /> : children}
       </Button>
     );
@@ -176,7 +175,7 @@ function QuickHotel({ hmDetails }) {
 
   function DeleteButton({ isLoading, children, ...props }) {
     return (
-      <Button variant="success" className="button" {...props}>
+      <Button variant="success" className={style.reg_btn} {...props}>
         {isButtonLoading ? <Spinner animation="border" /> : children}
       </Button>
     );
@@ -196,6 +195,7 @@ function QuickHotel({ hmDetails }) {
 
 
     return (
+      
         <div className={style.quickly_home}>
             <div>
                 <img
@@ -219,16 +219,19 @@ function QuickHotel({ hmDetails }) {
             </div>
 
             <Form>
-        <FormGroup className="mb-3">
+        <FormGroup className="mt-2">
           <FormControl
+            className="form-control m-1 p-1"
+            
             name="recipient"
             value={recipient}
             onChange={handleRecipientChange}
             placeholder="Enter recipient address"
           ></FormControl>
         </FormGroup>
-        <FormGroup className="mb-3">
+        <FormGroup className="reg_form">
           <FormControl
+            className="form-control m-1 p-1"
             name="flowRate"
             value={flowRate}
             onChange={handleFlowRateChange}
@@ -237,8 +240,9 @@ function QuickHotel({ hmDetails }) {
         </FormGroup>
         <FormGroup className="mb-3">
           <FormControl
+            className="form-control m-1 p-1"
             name="verify"
-            placeholder="Enter 4 digit PIN"
+            placeholder="Enter 4 digit security PIN"
           ></FormControl>
         </FormGroup>
        
