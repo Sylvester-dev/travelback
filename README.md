@@ -37,8 +37,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+<a href="https://ibb.co/mCJD4fF"><img src="https://i.ibb.co/Fb6xzRq/Screenshot-11.png" alt="Screenshot-11" border="0"></a>
+<a href="https://ibb.co/pPP4g5r"><img src="https://i.ibb.co/yRRgD7B/Screenshot-12.png" alt="Screenshot-12" border="0"></a>
+<a href="https://ibb.co/x1B2XMH"><img src="https://i.ibb.co/9b1pcqt/Screenshot-13.png" alt="Screenshot-13" border="0"></a><br />
 
 * The main objective of our hack is to provide people a way to earn money from their prepaid bookings during travelling and vacations.
 * It would take the money and based on a smart contract will distribute it in one or more money pools like AAVE  for the time between when the payment is made and the   maturation of his package/trip.
@@ -49,7 +51,7 @@
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
 
 * SuperFluid
 * DAO
@@ -77,8 +79,15 @@ This is an example of how to list things you need to use the software and how to
 * Create a Metamask wallet / connect your existing wallet.
   
   
+### Snapshot DAO space
+<a href="https://ibb.co/B4T5SJt"><img src="https://i.ibb.co/n3QN5yb/Screenshot-10.png" alt="Screenshot-10" border="0"></a>
+
+<a href="https://ibb.co/RcWFQCf"><img src="https://i.ibb.co/CQFcVng/Screenshot-14.png" alt="Screenshot-14" border="0"></a>
 
 
+### Initial figma designs
+
+<a href= "https://www.figma.com/file/Wbedqq9c61u7cm4NwEdfZ9/Untitled?node-id=0%3A1" >Go to figma designs</a>
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
