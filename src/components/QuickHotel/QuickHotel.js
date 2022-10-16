@@ -196,10 +196,10 @@ function QuickHotel({ hmDetails }) {
 
 
     return (
-        <div className={style.lovely_home}>
+        <div className={style.quickly_home}>
             <div>
                 <img
-                    className={style.lovely_home_img}
+                    className={style.quickly_home_img}
                     src={hmDetails.img}
                     alt="XYZ Hotel"
                     height={200}
@@ -211,9 +211,9 @@ function QuickHotel({ hmDetails }) {
                 <h3>{hmDetails.title}</h3>
             
             <p style={{textTransform: 'capitalize'}}>{hmDetails.location}</p>
-            <p className={style.lovely_home_price}> 💲{hmDetails.price}</p>
+            <p className={style.quickly_home_price}> 💲{hmDetails.price}</p>
 
-            <div className={style.lovely_home_btm}>
+            <div className={style.quickly_home_btm}>
                 <span>{hmDetails.rating}</span>
                 {hmDetails.rating > 9 ? <p>Wonderful</p> : <p>Exceptional</p>}
             </div>

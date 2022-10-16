@@ -4,10 +4,10 @@ import style from './HotelDetail.module.scss';
 
 function HotelDetail({ homesDetails }) {
     return (
-        <div className={style.LovelyHome_detail}>
+        <div className={style.HotelHome_detail}>
             <h2>Long Vacations</h2>
             
-            <div className={style.LovelyHome_detail_main}>
+            <div className={style.HotelHome_detail_main}>
                 {homesDetails?.map((details, i) => (
                   
                   <Hotel hmDetails={details} />

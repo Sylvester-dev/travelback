@@ -1,4 +1,4 @@
-.LovelyHome_detail {
+.HotelHome_detail {
   width: 100%;
   max-width: 1224px;
   margin-left: auto;
@@ -7,7 +7,7 @@
   padding-right: 10px;
   margin-bottom: 70px;
 
-  .LovelyHome_detail_main {
+  .HotelHome_detail_main {
     padding-top: 5px;
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
@@ -18,8 +18,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  .LovelyHome_detail {
-    .LovelyHome_detail_main {
+  .HotelHome_detail {
+    .HotelHome_detail_main {
       display: grid;
       grid-template-columns: 45% 45%;
       grid-gap: 25px;
@@ -30,8 +30,8 @@
 }
 
 @media screen and (max-width: 576px) {
-  .LovelyHome_detail {
-    .LovelyHome_detail_main {
+  .HotelHome_detail {
+    .HotelHome_detail_main {
       display: grid;
       grid-template-columns: 90%;
       grid-gap: 25px;
