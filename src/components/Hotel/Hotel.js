@@ -15,9 +15,9 @@ function Hotel({ hmDetails }) {
                 />
             </div>
             
-            <Link to={`/hotels/${hmDetails.id}`}>
+            
                 <h3>{hmDetails.title}</h3>
-            </Link>
+            
             <p style={{textTransform: 'capitalize'}}>{hmDetails.location}</p>
             <p className={style.lovely_home_price}> Starting from {hmDetails.price}</p>
 

@@ -207,9 +207,9 @@ function QuickHotel({ hmDetails }) {
                 />
             </div>
             
-            <a href={`/hotels/${hmDetails.id}`}>
+            
                 <h3>{hmDetails.title}</h3>
-            </a>
+            
             <p style={{textTransform: 'capitalize'}}>{hmDetails.location}</p>
             <p className={style.lovely_home_price}> 💲{hmDetails.price}</p>
 
