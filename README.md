@@ -59,6 +59,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * Ethereum
 * Pinata
 * NFT Tokens
+* Fleek/IPFS
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -113,7 +114,6 @@ This is an example of how to list things you need to use the software and how to
 
 
 
-# Working on 
+# Other Repos
 https://github.com/3scava1i3r/XYZ-subgraph <br/>
 https://github.com/3scava1i3r/XYZ-sc/blob/main/contracts/Main.sol <br/>
-https://github.com/Sylvester-dev/MoneyStream
