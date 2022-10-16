@@ -41,12 +41,12 @@ async function createNewFlow(recipient, flowRate) {
         // userData?: string
       });
   
-      console.log("Creating your stream...");
+      alert("Creating your stream...");
   
       const result = await createFlowOperation.exec(signer);
       console.log(result);
   
-      console.log(
+      alert(
      `HooraYY!! Stream Started
       View Your Stream At: https://app.superfluid.finance/dashboard/
       Network: Polygon
@@ -57,8 +57,8 @@ async function createNewFlow(recipient, flowRate) {
       `
       );
     } catch (error) {
-      console.log(
-        "Oho! Its an Error"
+      alert(
+        "Oho! Its an Error, make sure its not multiple stream.."
       );
       console.error(error);
     }
@@ -96,11 +96,11 @@ async function createNewFlow(recipient, flowRate) {
         // userData?: string
       });
   
-      console.log("Deleting your stream...");
+      alert("Deleting your stream...");
   
       await deleteFlowOperation.exec(signer);
   
-      console.log(
+      alert(
         `Checkout Done!! Stream stopped!!
          Network: Polygon
          Super Token: DAIx
